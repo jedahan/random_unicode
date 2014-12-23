@@ -1,0 +1,9 @@
+[package]
+
+name = "random_unicode"
+version = "0.0.1"
+authors = [ "Jonathan Dahan <jonathan@jonathan.is>" ]
+
+[[bin]]
+
+name = "random_unicode"
