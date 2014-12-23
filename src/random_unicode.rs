@@ -1,7 +1,9 @@
+use std::char;
+
 fn main() {
 
-  for x in range(std::u32::MIN, std::u32::MAX){
-    print!("{}", std::char::from_u32(x).unwrap());
+  for c in range(char::MIN, char::MAX){
+    print!("{}", c);
   }
 
 }
