@@ -1,7 +1,11 @@
 fn main() {
 
-  for x in range(std::u32::MIN, std::u32::MAX){
-    print!("{}", std::char::from_u32(x).unwrap());
+  for u in range(std::u32::MIN, std::char::MAX as u32) {
+    let character = match std::char::from_u32(u) {
+      Some(x) => x,
+      _ => ' '
+    };
+    print!("{}", character);
   }
 
 }
